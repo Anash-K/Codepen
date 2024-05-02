@@ -2,6 +2,7 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
 import Home from './Components/home'
+import PageNotFound from './Components/PageNotFound'
 
 
 
@@ -10,10 +11,9 @@ function App() {
 
   return (
     <>
-    <Home/>
-      <h1>this is heading</h1>
       <Routes>
-        <Route />
+        <Route path='/' element={<Home />} />
+        <Route path='*' element={<PageNotFound />} />
       </Routes>
     </>
   )
