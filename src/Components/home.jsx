@@ -2,28 +2,33 @@ import { faAngleDoubleLeft, faAngleLeft } from "@fortawesome/fontawesome-free-so
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
+import { Logo } from "../assets";
 
 const Home = () => {
   const [ismenu, setIsMenu] = useState(false);
   return (
-    <div className="bg-black h-screen flex">
+    <div className="menumain">
       <div
         className={
           ismenu
-            ? "left w-60  bg-gray-800 h-screen px-5 py-3 text-white bold relative"
-            : "left w-0  bg-gray-800 h-screen px-5 py-3 text-white bold relative"
+            ? "isSideMenu"
+            : "isSideMenuNot"
         }
       >
+        <div className="btndiv">
         <motion.button
           onClick={() => setIsMenu(!ismenu)}
-          whileTap={{ scale: 0.9 }} // Use whileTap for tap animations
-          className={ismenu ? "w-full text-right relative right-1" : "w-0 text-right relative right-1"} style={{ right: "-13px" , zIndex: "1" }}
+          whileTap={{ scale: 0.9 }} 
+          className={ismenu ? " sidemenubtn" : "sidemenubtnclose"}
         >
-          <FontAwesomeIcon icon={faAngleDoubleLeft} className="text-xl" />
+          <FontAwesomeIcon icon={faAngleDoubleLeft} className="text-xl menu_icon" />
         </motion.button>
+        </div>
 
         <div className="menu ">
-          <h1>Home</h1>
+          <Link to={"/"}><img src={Logo} className="logo" alt="logo" /></Link>
+          <Link>Start Coding</Link>
         </div>
       </div>
       <div className="right"></div>

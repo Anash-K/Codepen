@@ -1,0 +1,62 @@
+.isSideMenu {
+  left: 0;
+  background-color: #2d3748;
+  height: 100vh;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.isSideMenuNot {
+  left: 0%;
+  width: 20%;
+  background-color: #2d3748;
+  height: 100vh;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #fff;
+  font-weight: bold;
+  position: relative;
+}
+
+.menumain {
+  position: relative;
+  display: flex;
+  height: 100vh;
+  background-color: black;
+}
+
+.sidemenubtn {
+  width: 100%;
+  text-align: right;
+  position: relative;
+  right: 0px;
+}
+
+.sidemenubtnclose {
+  width: 0%;
+  text-align: right;
+  position: relative;
+  right: 0px;
+}
+
+.menu_icon {
+  text-align: right;
+  position: relative;
+  right: 0px;
+}
+
+.btndiv {
+  display: flex;
+  justify-content: end;
+}
+
+.logo {
+  width: 80%;
+}/*# sourceMappingURL=Style.css.map */
